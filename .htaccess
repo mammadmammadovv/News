@@ -1,0 +1,14 @@
+RewriteEngine on
+
+ErrorDocument 404 http://localhost/porto/404.php
+
+RewriteRule ^contact$ contact.php [NC,L]
+
+RewriteRule ^xeberler$ news.php [NC,L]
+
+RewriteRule ^news_detail/([0-9a-zA-Z-_])/([0-9+])$   news_detail/sef=$1&news_id=$2 [L,QSA]
+
+
+
+
+
